@@ -1,0 +1,190 @@
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+  font-family: 'Teko', sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+body {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.header {
+  height: 100vh;
+}
+
+.header .slick-slider {
+  margin-bottom: 0;
+}
+
+.header .header-slider {
+  position: relative;
+  height: 100vh;
+}
+
+.header .header-slider .slick-list {
+  height: 100vh;
+}
+
+.header .header-slider .block .img img {
+  width: 100%;
+  height: 100vh;
+}
+
+.header .header-slider .slick-dots {
+  bottom: 0;
+  top: 50%;
+  right: 110px;
+  text-align: end;
+  -webkit-transform: rotateX(40deg);
+          transform: rotateX(40deg);
+  width: 20px;
+  height: 70px;
+}
+
+.header .header-slider .slick-dots li {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.header .header-slider .slick-dots li:last-of-type {
+  margin-bottom: 0;
+}
+
+.header .header-slider .slick-dots li button {
+  padding: 0;
+}
+
+.header .header-slider .slick-dots li button::before {
+  font-size: 60px;
+  opacity: 1;
+  color: transparent;
+  border: 4px solid #3E3E3E;
+  border-radius: 50%;
+}
+
+.header .header-slider .slick-dots .slick-active button::before {
+  border: 4px solid #004cff;
+}
+
+.header .header-content .nav {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 1170px;
+}
+
+.header .header-content .nav .menu a {
+  text-transform: uppercase;
+  margin-left: 45px;
+  font-family: 'Teko', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 0.33px;
+  color: #404040;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header .header-content .nav .menu a:hover {
+  color: #004cff;
+}
+
+.header .header-content .nav .menu a:first-of-type {
+  margin-left: 0;
+}
+
+.header .header-content .nav .shopping-btn button {
+  font-family: 'Teko', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 22px;
+  letter-spacing: 0.33px;
+  background: #004cff;
+  width: 200px;
+  height: 60px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header .header-content .nav .shopping-btn button:hover {
+  -webkit-box-shadow: 0 5px 5px #404040;
+          box-shadow: 0 5px 5px #404040;
+}
+
+.header .header-content .title {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  width: 1170px;
+}
+
+.header .header-content .title h3 {
+  font-family: 'Teko', sans-serif;
+  font-weight: 700;
+  font-size: 68px;
+  letter-spacing: 2.04px;
+  line-height: 72px;
+  max-width: 385px;
+  margin-bottom: 50px;
+}
+
+.header .header-content .title .btn button {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 18px;
+  border: 4px solid #ffffff;
+  width: 240px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header .header-content .title .btn button:hover::before {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.header .header-content .title .btn button:hover {
+  color: #404040;
+}
+
+.header .header-content .title .btn button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateX(-250px);
+          transform: translateX(-250px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: -1;
+}
+/*# sourceMappingURL=style.css.map */

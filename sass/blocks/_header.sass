@@ -1,0 +1,115 @@
+.header 
+  height: 100vh
+  & .slick-slider 
+    margin-bottom: 0
+  & .header-slider
+    position: relative
+    height: 100vh
+    & .slick-list 
+      height: 100vh 
+    & .block 
+      & .img 
+        & img 
+          width: 100%
+          height: 100vh
+    & .slick-dots 
+      bottom: 0
+      top: 50%
+      right: 110px 
+      text-align: end
+      transform: rotateX(40deg)
+      width: 20px
+      height: 70px 
+      & li 
+        margin: 0
+        margin-bottom: 15px
+        &:last-of-type
+          margin-bottom: 0 
+        & button 
+          padding: 0
+          &::before
+            font-size: 60px 
+            opacity: 1
+            color: transparent
+            border: 4px solid #3E3E3E
+            border-radius: 50%
+      & .slick-active 
+        & button 
+          &::before
+            border: 4px solid #004cff
+  & .header-content
+    & .nav 
+      position: absolute
+      display: flex 
+      justify-content: space-between
+      align-items: center
+      top: 40px 
+      left: 50%
+      transform: translateX(-50%)
+      width: 1170px 
+      & .menu 
+        & a 
+          text-transform: uppercase 
+          margin-left: 45px
+          +teko_semi  
+          font-size: 22px 
+          letter-spacing: 0.33px 
+          color: #404040
+          transition: 0.3s
+          &:hover
+            color: #004cff
+          &:first-of-type
+            margin-left: 0
+      & .shopping-btn 
+        & button 
+          +teko_semi
+          color: #ffffff
+          text-transform: uppercase
+          font-size: 22px 
+          letter-spacing: 0.33px 
+          background: #004cff
+          width: 200px 
+          height: 60px 
+          transition: 0.3s
+          &:hover
+            box-shadow: 0 5px 5px #404040
+    & .title 
+      position: absolute
+      top: 50%
+      transform: translate(-50%,-50%)
+      left: 50%
+      width: 1170px 
+      & h3 
+        +teko_bold
+        font-size: 68px 
+        letter-spacing: 2.04px 
+        line-height: 72px 
+        max-width: 385px 
+        margin-bottom: 50px 
+      & .btn 
+        & button 
+          text-transform: uppercase
+          color: #ffffff
+          font-size: 18px 
+          border: 4px solid #ffffff
+          width: 240px 
+          height: 50px 
+          position: relative
+          overflow: hidden
+          transition: 0.3s
+          &:hover::before
+            transform: translateX(0)
+          &:hover
+            color: #404040
+          &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            background: #ffffff
+            width: 100%
+            height: 100%
+            transform: translateX(-250px)
+            transition: 0.3s
+            z-index: -1
+
