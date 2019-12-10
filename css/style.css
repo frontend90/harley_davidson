@@ -15,6 +15,7 @@ body {
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
+  background: #232323;
 }
 
 .header {
@@ -186,5 +187,185 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   z-index: -1;
+}
+
+.about {
+  padding: 50px 0;
+}
+
+.about .about-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.about .about-wrap:last-of-type {
+  margin-bottom: 0;
+}
+
+.about .about-wrap .block {
+  margin-left: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+.about .about-wrap .block:first-of-type {
+  margin-left: 0;
+}
+
+.about .about-wrap .one {
+  position: relative;
+  overflow: hidden;
+}
+
+.about .about-wrap .one:hover::before {
+  display: block;
+}
+
+.about .about-wrap .one:hover .overlay {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.about .about-wrap .one::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 76, 255, 0.8);
+  display: none;
+}
+
+.about .about-wrap .one .overlay {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translateY(-500px);
+          transform: translateY(-500px);
+}
+
+.about .about-wrap .one .overlay .overlay-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about .about-wrap .one .overlay .overlay-wrap .block {
+  max-width: 380px;
+}
+
+.about .about-wrap .one .overlay .overlay-wrap .block h5 {
+  text-transform: uppercase;
+  font-family: 'Teko', sans-serif;
+  font-weight: 500;
+  font-size: 68px;
+  line-height: 61px;
+  letter-spacing: 2.04px;
+}
+
+.about .about-wrap .one .overlay .overlay-wrap .offer {
+  max-width: 150px;
+  margin-top: 50px;
+}
+
+.about .about-wrap .one .overlay .overlay-wrap .offer p {
+  font-family: 'Teko', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 42px;
+}
+
+.about .about-wrap .one .overlay .overlay-wrap .offer h5 {
+  text-transform: uppercase;
+  font-family: 'Teko', sans-serif;
+  font-weight: 700;
+  font-size: 78px;
+  line-height: 70px;
+}
+
+.about .about-wrap .two {
+  position: relative;
+  overflow: hidden;
+}
+
+.about .about-wrap .two:hover::before {
+  display: block;
+}
+
+.about .about-wrap .two:hover .overlay {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.about .about-wrap .two::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 76, 255, 0.8);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: none;
+}
+
+.about .about-wrap .two .overlay {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translateY(-600px);
+          transform: translateY(-600px);
+}
+
+.about .about-wrap .two .overlay .overlay-wrap .block {
+  text-align: center;
+}
+
+.about .about-wrap .two .overlay .overlay-wrap .block h5 {
+  text-transform: uppercase;
+  font-family: 'Teko', sans-serif;
+  font-weight: 500;
+  font-size: 68px;
+  line-height: 61px;
+  letter-spacing: 2.04px;
+}
+
+.about .about-wrap .two .overlay .overlay-wrap .offer {
+  margin: auto;
+  max-width: 150px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.about .about-wrap .two .overlay .overlay-wrap .offer p {
+  font-family: 'Teko', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 42px;
+}
+
+.about .about-wrap .two .overlay .overlay-wrap .offer h5 {
+  text-transform: uppercase;
+  font-family: 'Teko', sans-serif;
+  font-weight: 700;
+  font-size: 78px;
+  line-height: 70px;
 }
 /*# sourceMappingURL=style.css.map */

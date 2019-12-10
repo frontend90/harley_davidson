@@ -1,0 +1,107 @@
+.about 
+  padding: 50px 0 
+  & .about-wrap
+    display: flex
+    justify-content: center
+    margin-bottom: 50px 
+    &:last-of-type
+      margin-bottom: 0
+    & .block 
+      margin-left: 50px
+      cursor: pointer
+      position: relative
+      &:first-of-type
+        margin-left: 0 
+    & .one 
+      position: relative
+      overflow: hidden
+      &:hover::before 
+        display: block 
+      &:hover .overlay 
+        transform: translateY(-50%)
+      &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        background: rgba(#004cff,0.8)
+        display: none 
+      & .overlay 
+        position: absolute
+        top: 50% 
+        transform: translateY(-50%) 
+        width: 100%
+        transition: 0.3s
+        transform: translateY(-500px)
+        & .overlay-wrap 
+          display: flex
+          justify-content: space-around
+          & .block 
+            max-width: 380px 
+            & h5 
+              text-transform: uppercase
+              +teko_med
+              font-size: 68px 
+              line-height: 61px 
+              letter-spacing: 2.04px 
+          & .offer 
+            max-width: 150px 
+            margin-top: 50px 
+            & p 
+              +teko_med
+              text-transform: uppercase
+              font-size: 42px 
+            & h5 
+              text-transform: uppercase
+              +teko_bold
+              font-size: 78px 
+              line-height: 70px 
+    & .two
+      position: relative
+      overflow: hidden
+      &:hover::before
+        display: block
+      &:hover .overlay 
+        transform: translateY(-50%)
+      &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        background: rgba(#004cff,0.8)
+        transition: 0.3s
+        display: none 
+      & .overlay 
+        position: absolute
+        top: 50% 
+        transform: translateY(-50%)
+        width: 100%
+        transition: 0.3s
+        transform: translateY(-600px)
+        & .overlay-wrap 
+          & .block 
+            text-align: center
+            & h5 
+              text-transform: uppercase
+              +teko_med
+              font-size: 68px 
+              line-height: 61px 
+              letter-spacing: 2.04px 
+          & .offer 
+            margin: auto
+            max-width: 150px 
+            margin-top: 50px 
+            text-align: center
+            & p 
+              +teko_med
+              text-transform: uppercase
+              font-size: 42px 
+            & h5 
+              text-transform: uppercase
+              +teko_bold
+              font-size: 78px 
+              line-height: 70px 
