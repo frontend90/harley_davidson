@@ -1,0 +1,79 @@
+.contact 
+  & .contact-wrap
+    display: flex
+    justify-content: space-between
+    & .block 
+      & h5 
+        font-size: 24px 
+        margin-bottom: 20px 
+      & .about 
+        padding: 0
+        margin-bottom: 45px 
+        & p 
+          width: 300px 
+          +mont_reg
+          font-size: 18px 
+          line-height: 33px 
+      & .follow 
+        & .social 
+          & a 
+            margin-left: 15px 
+            &:first-of-type
+              margin-left: 0
+            & .fab 
+              +brand 
+              color: #ffffff
+              background: #004cff
+              width: 40px 
+              height: 40px 
+              border-radius: 50%
+              display: inline-flex
+              align-items: center
+              justify-content: center
+              transition: 0.3s
+              &:hover
+                box-shadow: 0 0 5px #ffffff
+    & .information
+      & a 
+        display: flex
+        color: #ffffff
+        +mont_reg
+        font-size: 18px 
+        line-height: 42px 
+        transition: 0.3s
+        &:hover
+          color: #004cff
+    & .returns
+      & a 
+        display: flex
+        color: #ffffff
+        +mont_reg
+        font-size: 18px 
+        line-height: 42px 
+        transition: 0.3s
+        &:hover
+          color:#004cff  
+    & .address 
+      & .logo 
+        margin-bottom: 10px 
+      & p 
+        +mont_reg
+        font-size: 18px 
+        line-height: 33px 
+      & .check 
+        margin-top: 10px 
+        & a 
+          margin-left: 20px 
+          & img 
+            transition: 0.3s
+            &:hover
+              box-shadow: 0 0 20px #004cff 
+          &:first-of-type
+            margin-left: 0
+  & .contact-line 
+    background: #A4A4A4
+    margin: 50px 0
+    width: 100%
+    height: 1px 
+
+
