@@ -795,4 +795,10 @@ body {
   color: #b2b2b2;
   letter-spacing: 0.9px;
 }
+
+@media screen and (min-width: 0px) and (max-width: 375px) {
+  .container {
+    max-width: 90%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
