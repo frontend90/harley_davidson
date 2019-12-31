@@ -10,7 +10,8 @@
         "../sass/blocks/_blog.sass",
         "../sass/blocks/_test.sass",
         "../sass/blocks/_contact.sass",
-        "../sass/blocks/_footer.sass"
+        "../sass/blocks/_footer.sass",
+        "../sass/blocks/_adaptive.sass"
     ],
     "names": [],
     "file": "style.css"
